@@ -63,7 +63,8 @@ HW2/
 ├── tests/                     # Folder containing test cases for mergeSort
 │   ├── test_merge_sort.py
 │   └── ...
-└── README.md                  # This README file
+└── README.md
+└── LICENSE.txt
 ```
 ## Contact
 
