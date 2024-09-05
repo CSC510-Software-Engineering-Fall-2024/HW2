@@ -1,37 +1,63 @@
-import rand
+"""
+This module implements a merge sort algorithm to sort a list of numbers.
+The merge_sort function recursively divides the list into smaller sublists,
+and the recombine function merges these sorted sublists into a final sorted list.
+"""
+
+from rand import random_array
 
 
-def mergeSort(arr):
-    if (len(arr) == 1):
-        return arr
+def merge_sort(input_arr):
+    """
+    Perform a merge sort on the input array.
 
-    half = len(arr)//2
+    Args:
+        input_arr (list): List of elements to be sorted.
 
-    return recombine(mergeSort(arr[:half]), mergeSort(arr[half:]))
+    Returns:
+        list: Sorted list of elements.
+    """
+    if len(input_arr) <= 1:
+        return input_arr
+
+    mid = len(input_arr) // 2
+
+    return recombine(merge_sort(input_arr[:mid]), merge_sort(input_arr[mid:]))
 
 
-def recombine(leftArr, rightArr):
-    leftIndex = 0
-    rightIndex = 0
-    mergeArr = [None] * (len(leftArr) + len(rightArr))
-    while leftIndex < len(leftArr) and rightIndex < len(rightArr):
-        if leftArr[leftIndex] < rightArr[rightIndex]:
-            rightIndex += 1
-            mergeArr[leftIndex + rightIndex] = leftArr[leftIndex]
+def recombine(left_arr, right_arr):
+    """
+    Merge two sorted arrays into one sorted array.
+
+    Args:
+        left_arr (list): First sorted list.
+        right_arr (list): Second sorted list.
+
+    Returns:
+        list: Merged sorted list.
+    """
+    left_index = 0
+    right_index = 0
+    merged_arr = []
+
+    # Merge the two arrays
+    while left_index < len(left_arr) and right_index < len(right_arr):
+        if left_arr[left_index] < right_arr[right_index]:
+            merged_arr.append(left_arr[left_index])
+            left_index += 1
         else:
-            leftIndex += 1
-            mergeArr[leftIndex + rightIndex] = rightArr[rightIndex]
+            merged_arr.append(right_arr[right_index])
+            right_index += 1
 
-    for i in range(rightIndex, len(rightArr)):
-        mergeArr[leftIndex + rightIndex] = rightArr[i]
+    # Add any remaining elements from both arrays
+    merged_arr.extend(left_arr[left_index:])
+    merged_arr.extend(right_arr[right_index:])
 
-    for i in range(leftIndex, len(leftArr)):
-        mergeArr[leftIndex + rightIndex] = leftArr[i]
-
-    return mergeArr
+    return merged_arr
 
 
-arr = rand.random_array([None] * 20)
-arr_out = mergeSort(arr)
+# Generate a random array for sorting
+arr = random_array([None] * 20)
+arr_out = merge_sort(arr)
 
 print(arr_out)

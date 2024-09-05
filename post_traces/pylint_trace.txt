@@ -1,1 +1,9 @@
-pylint post trace
+$ pylint rand.py
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 7.14/10, +2.86)
+
+$ pylint hw2_debugging.py
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.13/10, +0.87)

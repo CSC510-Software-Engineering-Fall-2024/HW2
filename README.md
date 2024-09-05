@@ -21,7 +21,7 @@ The main objectives are:
 
 ### 2. Static Analysis and Auto-Formatting
 - Run **AutoPep8** to auto-format the Python code.
-- Use two static analysis tools (e.g., **pylint**, **flake8**, **mypy**, or others) to analyze all the files in the unzipped folder.
+- Use two static analysis tools (e.g., **pylint**, **pyflake**, **pyright**, **Autopep8**, **Bandit**, **Radon**)
 
 ### 3. Debugging the Code
 - The file `hw2_debugging.py` contains an implementation of the **mergeSort** algorithm, which relies on helper methods located in `rand.py`.
@@ -58,7 +58,7 @@ HW2/
 ├── rand.py                    # Helper methods used in mergeSort
 ├── post_traces/               # Folder containing the traces after re-running the static analysis tools
 │   ├── pylint_trace.txt
-│   ├── flake8_trace.txt
+│   ├── Radon_trace.txt
 │   └── ...
 ├── tests/                     # Folder containing test cases for mergeSort
 │   ├── test_merge_sort.py
