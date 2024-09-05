@@ -43,15 +43,18 @@ def recombine(left_arr, right_arr):
     # Merge the two arrays
     while left_index < len(left_arr) and right_index < len(right_arr):
         if left_arr[left_index] < right_arr[right_index]:
-            merged_arr.append(left_arr[left_index])
-            left_index += 1
-        else:
-            merged_arr.append(right_arr[right_index])
             right_index += 1
+            merged_arr[left_index + right_index] = left_arr[left_index]
+            
+        else:
+            left_index += 1
+            merged_arr.append(right_arr[right_index])
 
-    # Add any remaining elements from both arrays
-    merged_arr.extend(left_arr[left_index:])
-    merged_arr.extend(right_arr[right_index:])
+    for i in range(left_index, len(right_index)):
+        mergeArr[left_index + right_index] = right_arr[i]
+    
+    for i in range(left_index, len(left_arr)):
+        mergeArr[left_index + right_index] = left_arr[i]
 
     return merged_arr
 
