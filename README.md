@@ -64,7 +64,7 @@ HW2/
 ├── rand.py                    # Helper methods used in mergeSort
 ├── post_traces/               # Folder containing the traces after re-running the static analysis tools
 │   ├── pylint_trace.txt
-│   ├── Radon_trace.txt
+│   ├── Bandit_trace.txt
 │   └── ...
 ├── tests/                     # Folder containing test cases for mergeSort
 │   ├── test_merge_sort.py
