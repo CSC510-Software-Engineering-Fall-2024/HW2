@@ -1,4 +1,8 @@
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Python](https://img.shields.io/badge/Python-3.13%2B-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Testing workflow](https://github.com/CSC510-Software-Engineering-Fall-2024/HW-1/actions/workflows/test.yml/badge.svg) [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/) [![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Python](https://img.shields.io/badge/Python-3.13%2B-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Testing workflow](https://github.com/CSC510-Software-Engineering-Fall-2024/HW-1/actions/workflows/test.yml/badge.svg) [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/) [![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint) ![Radon](https://img.shields.io/github/workflow/status/your-repo/radon?label=radon&logo=radon) ![Bandit](https://img.shields.io/github/workflow/status/your-repo/bandit?label=bandit&logo=bandit) ![Pyflakes](https://img.shields.io/github/workflow/status/your-repo/pyflakes?label=pyflakes&logo=pyflakes) ![Pyright](https://img.shields.io/github/workflow/status/your-repo/pyright?label=pyright&logo=pyright)
+
+
+
+
 
 
 
