@@ -1,8 +1,15 @@
+"""
+Module to test merge sort functionality.
+"""
+
 def test_1():
-  pass
+    """Test case 1 for merge sort."""
+    return
 
 def test_2():
-  pass
+    """Test case 2 for merge sort."""
+    return
 
 def test_3():
-  pass
+    """Test case 3 for merge sort."""
+    return
