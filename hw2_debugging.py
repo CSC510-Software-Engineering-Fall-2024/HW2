@@ -51,10 +51,10 @@ def recombine(left_arr, right_arr):
             merged_arr.append(right_arr[right_index])
 
     for i in range(left_index, len(right_index)):
-        mergeArr[left_index + right_index] = right_arr[i]
+        merged_arr[left_index + right_index] = right_arr[i]
     
     for i in range(left_index, len(left_arr)):
-        mergeArr[left_index + right_index] = left_arr[i]
+        merged_arr[left_index + right_index] = left_arr[i]
 
     return merged_arr
 
