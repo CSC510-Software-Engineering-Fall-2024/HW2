@@ -77,4 +77,6 @@ HW2/
 For any questions or issues regarding this assignment, feel free to reach out:
 
 - **Email**: [pemacnic@ncsu.edu](oemacnic@ncsu.edu)
+- **Email**: [dguda@ncsu.edu](dguda@ncsu.edu)
+- **Email**: [aghosh7@ncsu.edu](aghosh7@ncsu.edu)
 
