@@ -7,7 +7,8 @@ and the recombine function merges these sorted sublists into a final sorted list
 from rand import random_array
 
 
-def merge_sort(input_arr):
+
+def merge_sort(input_arr)
     """
     Perform a merge sort on the input array.
 
