@@ -28,4 +28,4 @@ jobs:
 
     - name: Run Bandit
       run: |
-        bandit -r .  # Run security checks recursively on all Python files
+        bandit -r . -o bandit_trace.json # Run security checks recursively on all Python files
