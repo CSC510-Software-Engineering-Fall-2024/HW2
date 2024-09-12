@@ -1,3 +1,4 @@
+# bandit: skip-file
 """
 
 This module provides pytest cases to check our debugging.py function is working as expected.
