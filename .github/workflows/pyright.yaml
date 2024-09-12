@@ -26,11 +26,11 @@ jobs:
         npm install -g pyright  # Install Pyright globally using npm
 
     - name: Save Pyright Output
-  run: pyright > pyright_output.txt
+      run: pyright > pyright_output.txt
 
-- name: Upload Pyright Output
-  uses: actions/upload-artifact@v2
-  with:
-    name: pyright-report
-    path: pyright_output.txt
+    - name: Upload Pyright Output
+      uses: actions/upload-artifact@v2
+      with:
+        name: pyright-report
+        path: pyright_output.txt
 
