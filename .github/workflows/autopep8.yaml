@@ -1,4 +1,4 @@
-name: Lint Code with autopep8
+name: autopep8
 
 on:
   push:
