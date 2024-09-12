@@ -37,7 +37,7 @@ def recombine(left_arr, right_arr):
         list: Merged sorted list.
     """
     left_index = 0
-      right_index = 0
+    right_index = 0
     merged_arr = []
 
     # Merge the two arrays
