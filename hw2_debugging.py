@@ -7,7 +7,6 @@ and the recombine function merges these sorted sublists into a final sorted list
 from rand import random_array
 
 
-
 def merge_sort(input_arr):
     """
     Perform a merge sort on the input array.
@@ -44,24 +43,24 @@ def recombine(left_arr, right_arr):
     # Merge the two arrays
     while left_index < len(left_arr) and right_index < len(right_arr):
         if left_arr[left_index] < right_arr[right_index]:
-            right_index += 1
-            merged_arr[left_index + right_index] = left_arr[left_index]
+            merged_arr.append(left_arr[left_index])
+            left_index += 1
             
         else:
-            left_index += 1
             merged_arr.append(right_arr[right_index])
+            right_index += 1
 
-    for i in range(left_index, len(right_index)):
-        merged_arr[left_index + right_index] = right_arr[i]
+    for i in range(left_index, len(right_arr)):
+        merged_arr.append(right_arr[i])
     
     for i in range(left_index, len(left_arr)):
-        merged_arr[left_index + right_index] = left_arr[i]
+        merged_arr.append(left_arr[i])
 
     return merged_arr
 
 
 # Generate a random array for sorting
-arr = random_array([None] * 20)
+arr = random_array([[None] * 20])
 arr_out = merge_sort(arr)
 
 print(arr_out)
