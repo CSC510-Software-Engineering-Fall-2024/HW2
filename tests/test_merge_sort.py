@@ -1,4 +1,11 @@
+"""
+
+This module provides pytest cases to check our debugging.py function is working as expected.
+
+"""
+
 from hw2_debugging import merge_sort
+
 
 def test_1():
     input_arr = []
