@@ -1,9 +1,11 @@
-# bandit: skip-file
+
 """
 
 This module provides pytest cases to check our debugging.py function is working as expected.
 
 """
+
+# pylint: disable=missing-docstring
 
 from hw2_debugging import merge_sort
 
