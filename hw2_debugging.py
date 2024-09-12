@@ -50,7 +50,7 @@ def recombine(left_arr, right_arr):
             merged_arr.append(right_arr[right_index])
             right_index += 1
 
-    for i in range(left_index, len(right_arr)):
+    for i in range(right_index, len(right_arr)):
         merged_arr.append(right_arr[i])
     
     for i in range(left_index, len(left_arr)):
@@ -60,7 +60,7 @@ def recombine(left_arr, right_arr):
 
 
 # Generate a random array for sorting
-arr = random_array([[None] * 20])
+arr = random_array([None] * 20)
 arr_out = merge_sort(arr)
 
 print(arr_out)
