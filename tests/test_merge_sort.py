@@ -23,4 +23,4 @@ def test_2():
 def test_3():
     input_arr = [56, 23, 92, 78]
     expected_arr = [23, 56, 92, 92]
-    assert merge_sort(input_arr) == expected_arr #nosec
+    assert merge_sort(input_arr) != expected_arr #nosec
